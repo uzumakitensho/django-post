@@ -5,4 +5,7 @@
 		<h2><a href="">{{ anything_you_want.title }}</a></h2>
 		<p>{{ anything_you_want.body }}</p>
 	</div>
+
+	<a href="{% url 'post_edit' anything_you_want.pk %}">Edit this post</a><br>
+	<a href="{% url 'post_delete' anything_you_want.pk %}">Delete this post!!!</a>
 {% endblock content %}
